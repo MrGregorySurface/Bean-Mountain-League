@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Mountain League</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+    
+</head>
+
+<body>
+  <header>
+  <div>
+    <h1>Fantasy Football</h1>
+    <h2>Bean Mountain League</h2>
+
+    <img src="images/0d805e21-1c68-4b6a-8e5d-976e682744a1.png"
+         alt="beanMountain"
+         class="league-logo"
+         width="400"
+         height="400">
+
+    <a href="https://fantasy.espn.com/football/league?leagueId=898247976"
+       target="_blank"
+       class="espn-button">
+      View Full League on ESPN
+    </a>
+
+    <p>Welcome to the league!</p>
+
+    <p class="draft-label">Draft Starts In:</p>
+    <div id="countdown"></div>
+  </div>
+</header>
+
+<button id="add-team-btn">Add Team</button>
+
+<section class="team-grid">
+    
+  <div class="team-card">
+
+  <div class="logo-container">
+    <img src="images/team-logo.png" alt="Team Logo" class="team-logo">
+    <input type="file" class="logo-upload" accept="image/*" hidden>
+  </div>
+
+  <div class="team-info">
+    <h3 class="team-name">Team Name</h3>
+    <p class="owner-name">Owner Username</p>
+  </div>
+
+  <button class="edit-btn">Edit Info</button>
+  <button class="reset-btn">Reset Team</button>
+  <button class="delete-btn">Delete Team</button>
+
+</div>
+
+<div class="team-card">
+
+  <div class="logo-container">
+    <img src="images/team-logo.png" alt="Team Logo" class="team-logo">
+    <input type="file" class="logo-upload" accept="image/*" hidden>
+  </div>
+
+  <div class="team-info">
+    <h3 class="team-name">Team Name</h3>
+    <p class="owner-name">Owner Username</p>
+  </div>
+
+  <button class="edit-btn">Edit Info</button>
+  <button class="reset-btn">Reset Team</button>
+  <button class="delete-btn">Delete Team</button>
+
+</div>
+
+<div class="team-card">
+
+  <div class="logo-container">
+    <img src="images/team-logo.png" alt="Team Logo" class="team-logo">
+    <input type="file" class="logo-upload" accept="image/*" hidden>
+  </div>
+
+  <div class="team-info">
+    <h3 class="team-name">Team Name</h3>
+    <p class="owner-name">Owner Username</p>
+  </div>
+
+  <button class="edit-btn">Edit Info</button>
+  <button class="reset-btn">Reset Team</button>
+  <button class="delete-btn">Delete Team</button>
+
+</div>
+
+<div class="team-card">
+
+  <div class="logo-container">
+    <img src="images/team-logo.png" alt="Team Logo" class="team-logo">
+    <input type="file" class="logo-upload" accept="image/*" hidden>
+  </div>
+
+  <div class="team-info">
+    <h3 class="team-name">Team Name</h3>
+    <p class="owner-name">Owner Username</p>
+  </div>
+
+  <button class="edit-btn">Edit Info</button>
+  <button class="reset-btn">Reset Team</button>
+  <button class="delete-btn">Delete Team</button>
+
+</div>
+
+<div class="team-card">
+
+  <div class="logo-container">
+    <img src="images/team-logo.png" alt="Team Logo" class="team-logo">
+    <input type="file" class="logo-upload" accept="image/*" hidden>
+  </div>
+
+  <div class="team-info">
+    <h3 class="team-name">Team Name</h3>
+    <p class="owner-name">Owner Username</p>
+  </div>
+
+  <button class="edit-btn">Edit Info</button>
+  <button class="reset-btn">Reset Team</button>
+  <button class="delete-btn">Delete Team</button>
+
+</div>
+
+<div class="team-card">
+
+  <div class="logo-container">
+    <img src="images/team-logo.png" alt="Team Logo" class="team-logo">
+    <input type="file" class="logo-upload" accept="image/*" hidden>
+  </div>
+
+  <div class="team-info">
+    <h3 class="team-name">Team Name</h3>
+    <p class="owner-name">Owner Username</p>
+  </div>
+
+  <button class="edit-btn">Edit Info</button>
+  <button class="reset-btn">Reset Team</button>
+  <button class="delete-btn">Delete Team</button>
+
+</div>
+
+<div class="team-card">
+
+  <div class="logo-container">
+    <img src="images/team-logo.png" alt="Team Logo" class="team-logo">
+    <input type="file" class="logo-upload" accept="image/*" hidden>
+  </div>
+
+  <div class="team-info">
+    <h3 class="team-name">Team Name</h3>
+    <p class="owner-name">Owner Username</p>
+  </div>
+
+  <button class="edit-btn">Edit Info</button>
+  <button class="reset-btn">Reset Team</button>
+  <button class="delete-btn">Delete Team</button>
+
+</div>
+
+<div class="team-card">
+
+  <div class="logo-container">
+    <img src="images/team-logo.png" alt="Team Logo" class="team-logo">
+    <input type="file" class="logo-upload" accept="image/*" hidden>
+  </div>
+
+  <div class="team-info">
+    <h3 class="team-name">Team Name</h3>
+    <p class="owner-name">Owner Username</p>
+  </div>
+
+  <button class="edit-btn">Edit Info</button>
+  <button class="reset-btn">Reset Team</button>
+  <button class="delete-btn">Delete Team</button>
+
+</div>
+
+</section>
+
+<!-- PIN MODAL -->
+<div id="pin-modal" class="modal hidden">
+  <div class="modal-content">
+    <h2 id="modal-title">Enter PIN</h2>
+    <input type="password" id="pin-input" maxlength="4" placeholder="4-digit PIN" />
+    <div class="modal-buttons">
+      <button id="modal-confirm">Confirm</button>
+      <button id="modal-cancel">Cancel</button>
+    </div>
+    <p id="modal-error" class="modal-error"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
